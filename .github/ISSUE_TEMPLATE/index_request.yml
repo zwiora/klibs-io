@@ -8,22 +8,21 @@ body:
       value: |
         ### Library details
         
-        Fill out the details of a library you want to be indexed by klibs.
-        If you leave the version blank, all versions will be indexed.
+        Fill out the details of a library you want to be indexed by klibs. If you leave the version blank, all versions will be indexed.
         
         Remember, that for a library to be indexed successfully, it must meet all the [requirements](https://klibs.io/faq#how-do-i-add-a-project).
   - type: input
     id: group_id
     attributes:
       label: Group ID
-      description: "Provide the group ID of the library, e.g., `org.jetbrains.kotlinx`"
+      description: "Provide the group ID of the library, e.g., `org.jetbrains.kotlinx`."
     validations:
       required: true
   - type: input
     id: artifact_id
     attributes:
       label: Artifact ID
-      description: "Provide the artifact ID of the library, e.g., `kotlinx-coroutines-core`"
+      description: "Provide the artifact ID of the library, e.g., `kotlinx-coroutines-core`."
     validations:
       required: true
   - type: input
