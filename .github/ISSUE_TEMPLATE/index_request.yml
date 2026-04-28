@@ -5,7 +5,12 @@ labels: [ "index-request" ]
 body:
   - type: markdown
     attributes:
-      value: Fill out the details of a library you want to be indexed by klibs. If you leave the version blank, all versions will be indexed.
+      value: |
+        ## Details
+        
+        Fill out the details of a library you want to be indexed by klibs.
+        
+        If you leave the version blank, all versions will be indexed.
   - type: input
     id: group_id
     attributes:
