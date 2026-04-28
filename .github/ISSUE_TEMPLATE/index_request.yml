@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        #### Details
+        ### Details
         
         Fill out the details of a library you want to be indexed by klibs.
         If you leave the version blank, all versions will be indexed.
