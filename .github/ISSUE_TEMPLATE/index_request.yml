@@ -1,11 +1,11 @@
 name: Request indexing of a library
-description: Request to add a new library or a new version of a library to klibs.
+description: Request adding a new library or a new version of a library
 title: "[Add a library]: "
 labels: [ "index-request" ]
 body:
-  #   - type: markdown
-  #     attributes:
-  #       value: Please fill out the details below.
+  - type: markdown
+    attributes:
+      value: Fill out the details of a library you want to be indexed by klibs. If you leave the version blank, all versions will be indexed.
   - type: input
     id: group_id
     attributes:
