@@ -16,20 +16,20 @@ body:
     id: group_id
     attributes:
       label: Group ID
-      placeholder: e.g., org.jetbrains.kotlinx
+      description: "Provide the group ID of the library, e.g., `org.jetbrains.kotlinx`"
     validations:
       required: true
   - type: input
     id: artifact_id
     attributes:
       label: Artifact ID
-      placeholder: e.g., kotlinx-coroutines-core
+      description: "Provide the artifact ID of the library, e.g., `kotlinx-coroutines-core`"
     validations:
       required: true
   - type: input
     id: version
     attributes:
       label: Version
-      placeholder: e.g., 1.10.2 (Leave blank if you want all versions)
+      description: "Provide the version of the library, e.g., `1.10.2`. Leave blank if you want all versions to be indexed."
     validations:
       required: false
