@@ -1,7 +1,6 @@
-name: Publish notifier plugin
+name: Publish the klibs-io-notifier Gradle plugin
 
-on:
-  workflow_dispatch:
+on: workflow_dispatch
 
 permissions:
   contents: read

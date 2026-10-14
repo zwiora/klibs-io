@@ -32,7 +32,6 @@ To use the klibs-io-notifier plugin in your project, it needs to:
 <!-- TODO: KTL-4938 update information about Kotlin Toolchain-->
 
 ### Minimum supported versions
-<!-- TODO: KTL-4909 Update the section according to the final decision -->
 
 * JDK 17
 * Gradle 9.0.0
@@ -54,7 +53,7 @@ For your library to be listed on klibs.io, it must meet the [klibs.io criteria](
 
 <!-- TODO: KTL-4909 Update the section according to the actual deployment -->
 
-The klibs-io-notifier plugin is shared via the [Gradle Plugin Portal](https://plugins.gradle.org/plugin/io.klibs.notifier).
+The klibs-io-notifier plugin is shared via the [Gradle Plugin Portal](https://plugins.gradle.org/plugin/org.jetbrains.kotlin.klibs-io-notifier).
 
 To use the klibs-io-notifier, add the Gradle Plugin Portal to `pluginManagement.repositories` in `settings.gradle.kts`:
 
@@ -74,7 +73,7 @@ Add the klibs-io-notifier to the `plugins` block in the `build.gradle.kts` of th
 
 ```kotlin
 plugins {
-    id("io.klibs.notifier") version "1.0.0"
+    id("org.jetbrains.kotlin.klibs-io-notifier") version "1.0.0"
 }
 ```
 
