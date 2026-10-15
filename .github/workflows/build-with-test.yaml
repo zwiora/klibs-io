@@ -1,9 +1,6 @@
 name: Build klibs.io with tests
 
 on:
-  push:
-    branches:
-      - '**'
   pull_request:
     branches:
       - '**'
