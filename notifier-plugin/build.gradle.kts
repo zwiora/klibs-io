@@ -1,12 +1,10 @@
-import org.gradle.plugin.compatibility.compatibility
-
 plugins {
     `kotlin-dsl`
-    id("com.gradle.plugin-publish") version "2.2.1"
+    id("maven-publish")
 }
 
-group = "org.jetbrains.kotlin"
-version = "0.0.1"
+group = "io.klibs.notifier"
+version = "1.0.0"
 
 kotlin {
     jvmToolchain(17)
@@ -22,21 +20,21 @@ dependencies {
 }
 
 gradlePlugin {
-    website = "https://klibs.io/"
-    vcsUrl = "https://github.com/JetBrains/klibs-io"
     plugins {
         create("klibs-io-notifier") {
-            id = "org.jetbrains.kotlin.klibs-io-notifier"
+            id = "io.klibs.notifier"
             implementationClass = "io.klibs.notifier.KlibsIoNotifierPlugin"
             displayName = "Klibs.io Notifier"
-            description = "Notifies klibs.io about Kotlin Multiplatform libraries published to Maven Central"
-            tags = listOf("klibs.io", "Kotlin", "KMP", "KotlinMultiplatform", "publishing", "mavenCentral")
+            description = "Notifies klibs.io about artifacts published to Maven Central"
+        }
+    }
+}
 
-            compatibility {
-                features {
-                    configurationCache = true
-                }
-            }
+publishing {
+    repositories {
+        maven {
+            name = "localRepo"
+            url = layout.buildDirectory.dir("local-repo").get().asFile.toURI()
         }
     }
 }
