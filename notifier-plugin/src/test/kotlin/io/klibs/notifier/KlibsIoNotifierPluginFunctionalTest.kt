@@ -91,7 +91,7 @@ class KlibsIoNotifierPluginFunctionalTest {
             plugins {
                 kotlin("multiplatform") version "$kotlinVersion"
                 id("com.vanniktech.maven.publish") version "$vanniktechVersion"
-                id("org.jetbrains.kotlin.klibs-io-notifier")
+                id("io.klibs.notifier")
             }
 
             kotlin { jvm() }
@@ -282,7 +282,7 @@ class KlibsIoNotifierPluginFunctionalTest {
             """
             plugins {
                 kotlin("multiplatform") version "$currentKotlinVersion"
-                id("org.jetbrains.kotlin.klibs-io-notifier")
+                id("io.klibs.notifier")
             }
 
             kotlin { jvm() }
